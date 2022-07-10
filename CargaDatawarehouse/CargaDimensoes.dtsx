@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDimensoes"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{6988DEE3-69A7-483A-AF1E-96E3C3E37D22}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{AE67F119-0C9B-4549-AB8E-8450E31AA8C8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUY0s0zQpC0a1xM/O6MvCkwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLp9qYVnjCeUJx+2dxVIR8skqWV4fwLRqDJv8ro89C5wAAAAAOgAAAAAIAACAAAAC1NpT/kSQlI60CK+ilBvcK2nESQmhBXNNGePUsOkClmSAAAAA6aA+IFzmK5MdAS8XdaPPNLRxSa58loxojs11RQM3vSUAAAAD6uz2eGdDcvTeqz54BEaLdv8phb3NGLtybd66o0jY8RK5x7X8Lii8EEgU7eMpVIPR3a/2s09W6cddy4T2ewuxr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUY0s0zQpC0a1xM/O6MvCkwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACpIEmDjTdIo7tH/YthOj84CRYXdMWHQe1DnKXhwPcknAAAAAAOgAAAAAIAACAAAACOQrubu0A82xw9K8QNhUGF3Ds10OBIztgMz/JtTvdxuyAAAAAe5tUMG3hC4RqoqoK4nJuHLS+mUJGkCDpOTnCJwxEQZUAAAADfmIYJBMQVR4aYFaC/jcgtkSkAdeOd9ttNktGko2cjShFQd2hW3zwmFg53P2L6Uu5KROs8WJfxZuT4YscEx37C</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -78,7 +78,31 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\renat\OneDrive\Área de Trabalho\Cursos\Alura\SSIS\Arquivos-Aula4\Arquivos - Aula 4\FUNCIONARIOS GRUPO 1.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\renat\OneDrive\Área de Trabalho\Cursos\Alura\SSIS\Arquivos-Aula4\Arquivos - Aula 4\FUNCIONARIOS GRUPO 1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{FA5A4ED6-D627-47EF-9DBB-8C5841746107}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\renat\OneDrive\Área de Trabalho\Cursos\Alura\SSIS\Arquivos-Aula4\Arquivos - Aula 4\FUNCIONARIOS GRUPO 2.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{82FAA962-58A7-4A5F-96BE-8156C8FD0739}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\renat\OneDrive\Área de Trabalho\Cursos\Alura\SSIS\Arquivos-Aula4\Arquivos - Aula 4\FUNCIONARIOS GRUPO 2.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -3650,6 +3674,1963 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
               endId="Package\Criação da Dimensão Fábrica\Conversão de Dados.Inputs[Entrada de Conversão de Dados]"
               name="Saída de Origem OLE DB"
               startId="Package\Criação da Dimensão Fábrica\Execução consulta SQL.Outputs[Saída de Origem OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarefa Fluxo de Dados"
+      DTS:DTSID="{62DAB30B-AD10-4CDF-959A-B96ED792673F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Criação da Dimensão Organizacional Tab 2 Nível 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Classificar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Classifica os dados de entrada em ordem crescente ou decrescente quando eles não podem ser classificados em sua origem. Por exemplo, classifique dados de vendas por 'customer id' antes de eles serem gravados em um arquivo simples e entregues a outro departamento. Observação: essa transformação não é recomendável para fluxos de dados grandes."
+              name="Classificar"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação Classificação remove linhas com valores de classificação duplicados."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o número máximo de threads a usar para classificação."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Inputs[Classificar Entrada]"
+                  name="Classificar Entrada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Inputs[Classificar Entrada].Columns[matricula3]"
+                      cachedDataType="r8"
+                      cachedName="matricula3"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Inputs[Classificar Entrada].Columns[DIRETOR]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="DIRETOR"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[DIRETOR]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída]"
+                  isSorted="true"
+                  name="Classificar Saída">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[matricula3]"
+                      dataType="r8"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[matricula3]"
+                      name="matricula3"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[DIRETOR]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[DIRETOR]"
+                      name="DIRETOR">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[DIRETOR]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
+              description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
+              name="Comando OLE DB"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[Dim_Organizacional] SET [Desc_Filho] = ? WHERE [Cod_Filho] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
+                  errorOrTruncationOperation="Execução de Comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Comando OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="200"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Outputs[Saída de Comando OLE DB]"
+                  exclusionGroup="1"
+                  name="Saída de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
+              description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
+              name="Comando OLE DB 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[Dim_Organizacional] SET [Desc_Filho] = ? WHERE [Cod_Filho] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
+                  errorOrTruncationOperation="Execução de Comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Comando OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="200"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Outputs[Saída de Comando OLE DB]"
+                  exclusionGroup="1"
+                  name="Saída de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversão de Dados;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversão de Dados"
+              name="Conversão para UNICODE"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]"
+                  name="Entrada de Conversão de Dados">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados].Columns[matricula3]"
+                      cachedDataType="r8"
+                      cachedName="matricula3"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[matricula3]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados].Columns[DIRETOR]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="DIRETOR"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[DIRETOR]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados]"
+                  exclusionGroup="1"
+                  name="Saída de Conversão de Dados"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]"
+                      name="Cod_Filho"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[matricula3]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="200"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]"
+                      name="Desc_Filho"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída].Columns[DIRETOR]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Conversão de Dados"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Dimensão de Alteração Lenta;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;3"
+              description="Atualiza uma dimensão de data warehouse do SQL Server Analysis Services. Atualize registros da dimensão que já estejam presentes e insira os registros que não estão. Por exemplo, atualize a tabela DimProduct do banco de dados OLAP AdventureWorksDW com dados da tabela Products do banco de dados OLTP AdventureWorks."
+              name="Dimensão de Alteração Lenta"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica a instrução SELECT usada para criar um conjunto de linhas de esquema."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Cod_Filho], [Desc_Filho] FROM [dbo].[Dim_Organizacional]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a cláusula WHERE na instrução SELECT que seleciona a linha atual entre as linhas com chaves de negócios idênticas."
+                  name="CurrentRowWhere"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as atualizações de atributo de histórico são direcionadas para a saída de transformação para atualizações de atributo de alteração."
+                  name="UpdateChangingAttributeHistory">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação falhará quando as colunas com atributos fixos contiverem alterações."
+                  name="FailOnFixedAttributeChange">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome da coluna para o membro inferido."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as atualizações de membro inferido são detectadas."
+                  name="EnableInferredMember">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação falhará quando uma pesquisa de registro existente falhar."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica que todas as linhas na entrada são novas ou a transformação detecta o tipo de alteração."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Connections[LookupConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="Define a conexão a ser usada para pesquisas na tabela de dimensão"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]"
+                  name="Entrada de Dimensão de Alteração Lenta">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Cod_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Desc_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Cod_Filho]"
+                      dataType="wstr"
+                      length="50"
+                      name="Cod_Filho" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Desc_Filho]"
+                      dataType="wstr"
+                      length="200"
+                      name="Desc_Filho" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Saída Inalterada]"
+                  description="Linhas inalteradas"
+                  exclusionGroup="1"
+                  name="Saída Inalterada"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Nova Saída]"
+                  description="Novas linhas"
+                  exclusionGroup="1"
+                  name="Nova Saída"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Saída de Atributo Fixo]"
+                  description="Linhas com alterações em colunas marcadas com FixedAttribute"
+                  exclusionGroup="1"
+                  name="Saída de Atributo Fixo"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Atributo de Alteração]"
+                  description="Essas linhas contêm novas informações para as alterações da coluna ChangingAttribute (Type 1)"
+                  exclusionGroup="1"
+                  name="Saída de Atualizações de Atributo de Alteração"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Saída de Inserções de Atributo de Histórico]"
+                  description="O resultado de alterações de HistoricalAttribute (Type 2) nessas novas linhas"
+                  exclusionGroup="2"
+                  name="Saída de Inserções de Atributo de Histórico"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Membro Inferido]"
+                  description="Informações para atualizar a linha de dimensão inicial sem preenchimento"
+                  exclusionGroup="1"
+                  name="Saída de Atualizações de Membro Inferido"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino OLE DB"
+              name="Insert Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">[dbo].[Dim_Organizacional]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forca o uso do valor da propriedade DefaultCodePage durante a descrição dos dados de caractere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se os valores fornecidos para colunas de identidade serão copiados no destino. Se false, os valores para colunas de identidade serão gerados automaticamente no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as colunas que contêm null terão null inserido no destino. Se false, as colunas que contêm null terão seus valores padrão inseridos no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica as opções a serem usadas com o carregamento rápido. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica quando confirmações são emitidas durante a inserção de dados. Um valor de 0 especifica que uma confirmação será emitida ao final da inserção de dados. Aplicável somente se o carregamento rápido estiver ativado."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB]"
+                  errorOrTruncationOperation="Inserir"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Destino OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Desc_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Filho]"
+                      dataType="wstr"
+                      length="50"
+                      name="Cod_Filho" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Desc_Filho]"
+                      dataType="wstr"
+                      length="200"
+                      name="Desc_Filho" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Pai]"
+                      dataType="wstr"
+                      length="50"
+                      name="Cod_Pai" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Esquerda]"
+                      dataType="i4"
+                      name="Esquerda" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Direita]"
+                      dataType="i4"
+                      name="Direita" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Nivel]"
+                      dataType="i4"
+                      name="Nivel" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Outputs[Saída de Erro de Destino OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Destino OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Origem do Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Origem do Excel"
+              name="Origem do Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="A variável que contém o comando SQL a ser executado."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="O mapeamento de parâmetros no comando SQL para variáveis."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 4]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel]"
+                  name="Saída de Origem do Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[matricula3]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]"
+                      name="matricula3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[DIRETOR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[DIRETOR]"
+                      length="255"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[DIRETOR]"
+                      name="DIRETOR"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[matricula]"
+                      dataType="r8"
+                      name="matricula" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[VENDEDOR]"
+                      dataType="wstr"
+                      length="255"
+                      name="VENDEDOR" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[matricula3]"
+                      dataType="r8"
+                      name="matricula3" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[DIRETOR]"
+                      dataType="wstr"
+                      length="255"
+                      name="DIRETOR" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem do Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[matricula3]"
+                      dataType="r8"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[matricula3]"
+                      name="matricula3" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[DIRETOR]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[DIRETOR]"
+                      name="DIRETOR" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Classificar Saída]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]"
+              name="Classificar Saída"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Outputs[Classificar Saída]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Nova Saída]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination.Inputs[Entrada de Destino OLE DB]"
+              name="Nova Saída"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Nova Saída]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Atualizações de Atributo de Alteração]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
+              name="Saída de Atualizações de Atributo de Alteração"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Atributo de Alteração]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Atualizações de Membro Inferido]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
+              name="Saída de Atualizações de Membro Inferido"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Membro Inferido]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Conversão de Dados]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]"
+              name="Saída de Conversão de Dados"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE.Outputs[Saída de Conversão de Dados]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Origem do Excel]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar.Inputs[Classificar Entrada]"
+              name="Saída de Origem do Excel"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel.Outputs[Saída de Origem do Excel]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarefa Fluxo de Dados"
+      DTS:DTSID="{68B2611A-1709-4F0B-BBC1-25D70E2D63B5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Criação da Dimensão Organizacional Tab 2 Nível 2"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Classificar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Classifica os dados de entrada em ordem crescente ou decrescente quando eles não podem ser classificados em sua origem. Por exemplo, classifique dados de vendas por 'customer id' antes de eles serem gravados em um arquivo simples e entregues a outro departamento. Observação: essa transformação não é recomendável para fluxos de dados grandes."
+              name="Classificar"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação Classificação remove linhas com valores de classificação duplicados."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o número máximo de threads a usar para classificação."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Inputs[Classificar Entrada]"
+                  name="Classificar Entrada">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Inputs[Classificar Entrada].Columns[VENDEDOR]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="VENDEDOR"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[VENDEDOR]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Inputs[Classificar Entrada].Columns[matricula3]"
+                      cachedDataType="r8"
+                      cachedName="matricula3"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Inputs[Classificar Entrada].Columns[matricula]"
+                      cachedDataType="r8"
+                      cachedName="matricula"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica as opções de comparação para os dados de caractere."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica a ordem de classificação da coluna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída]"
+                  isSorted="true"
+                  name="Classificar Saída">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[VENDEDOR]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[VENDEDOR]"
+                      name="VENDEDOR">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[VENDEDOR]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula3]"
+                      dataType="r8"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula3]"
+                      name="matricula3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula]"
+                      dataType="r8"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula]"
+                      name="matricula"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica o identificador de linhagem da coluna de entrada associada à coluna de saída."
+                          name="SortColumnId">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
+              description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
+              name="Comando OLE DB"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[Dim_Organizacional] SET [Cod_Pai] = ?,[Desc_Filho] = ? WHERE [Cod_Filho] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
+                  errorOrTruncationOperation="Execução de Comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Comando OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[Cod_Pai]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Pai"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Pai]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      dataType="wstr"
+                      length="200"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Outputs[Saída de Comando OLE DB]"
+                  exclusionGroup="1"
+                  name="Saída de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;2"
+              description="Executa uma instrução SQL para cada linha em um fluxo de dados. Por exemplo, chame um procedimento armazenado 'new employee setup' para cada linha da tabela 'new employees'. Observação: a execução de uma instrução SQL para cada linha de um fluxo de dados grande pode demorar."
+              name="Comando OLE DB 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[Dim_Organizacional] SET [Cod_Pai] = ?,[Desc_Filho] = ? WHERE [Cod_Filho] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
+                  errorOrTruncationOperation="Execução de Comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Comando OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[Cod_Pai]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Pai"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Pai]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_1]"
+                      dataType="wstr"
+                      length="200"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB].ExternalColumns[Param_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Informações de parâmetro. Corresponde os valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Outputs[Saída de Comando OLE DB]"
+                  exclusionGroup="1"
+                  name="Saída de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Comando OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Outputs[Saída de Erro de Comando OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversão de Dados;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversão de Dados"
+              name="Conversão para UNICODE"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]"
+                  name="Entrada de Conversão de Dados">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados].Columns[VENDEDOR]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="VENDEDOR"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[VENDEDOR]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados].Columns[matricula3]"
+                      cachedDataType="r8"
+                      cachedName="matricula3"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula3]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados].Columns[matricula]"
+                      cachedDataType="r8"
+                      cachedName="matricula"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados]"
+                  exclusionGroup="1"
+                  name="Saída de Conversão de Dados"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="200"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]"
+                      name="Desc_Filho"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[VENDEDOR]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Pai]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Pai]"
+                      name="Cod_Pai"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula3]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]"
+                      name="Cod_Filho"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica a coluna de entrada usada como a origem dois dados para a conversão."
+                          name="SourceInputColumnLineageID">#{Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída].Columns[matricula]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Conversão de Dados"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Erro de Conversão de Dados].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Dimensão de Alteração Lenta;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;3"
+              description="Atualiza uma dimensão de data warehouse do SQL Server Analysis Services. Atualize registros da dimensão que já estejam presentes e insira os registros que não estão. Por exemplo, atualize a tabela DimProduct do banco de dados OLAP AdventureWorksDW com dados da tabela Products do banco de dados OLTP AdventureWorks."
+              name="Dimensão de Alteração Lenta"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica a instrução SELECT usada para criar um conjunto de linhas de esquema."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Cod_Filho], [Cod_Pai], [Desc_Filho] FROM [dbo].[Dim_Organizacional]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a cláusula WHERE na instrução SELECT que seleciona a linha atual entre as linhas com chaves de negócios idênticas."
+                  name="CurrentRowWhere"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as atualizações de atributo de histórico são direcionadas para a saída de transformação para atualizações de atributo de alteração."
+                  name="UpdateChangingAttributeHistory">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação falhará quando as colunas com atributos fixos contiverem alterações."
+                  name="FailOnFixedAttributeChange">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome da coluna para o membro inferido."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as atualizações de membro inferido são detectadas."
+                  name="EnableInferredMember">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se a transformação falhará quando uma pesquisa de registro existente falhar."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica que todas as linhas na entrada são novas ou a transformação detecta o tipo de alteração."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Connections[LookupConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="Define a conexão a ser usada para pesquisas na tabela de dimensão"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]"
+                  name="Entrada de Dimensão de Alteração Lenta">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Cod_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].Columns[Cod_Pai]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Pai"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Cod_Pai]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Pai]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Desc_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Cod_Filho]"
+                      dataType="wstr"
+                      length="50"
+                      name="Cod_Filho" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Cod_Pai]"
+                      dataType="wstr"
+                      length="50"
+                      name="Cod_Pai" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta].ExternalColumns[Desc_Filho]"
+                      dataType="wstr"
+                      length="200"
+                      name="Desc_Filho" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Saída Inalterada]"
+                  description="Linhas inalteradas"
+                  exclusionGroup="1"
+                  name="Saída Inalterada"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Nova Saída]"
+                  description="Novas linhas"
+                  exclusionGroup="1"
+                  name="Nova Saída"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Saída de Atributo Fixo]"
+                  description="Linhas com alterações em colunas marcadas com FixedAttribute"
+                  exclusionGroup="1"
+                  name="Saída de Atributo Fixo"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Atributo de Alteração]"
+                  description="Essas linhas contêm novas informações para as alterações da coluna ChangingAttribute (Type 1)"
+                  exclusionGroup="1"
+                  name="Saída de Atualizações de Atributo de Alteração"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Saída de Inserções de Atributo de Histórico]"
+                  description="O resultado de alterações de HistoricalAttribute (Type 2) nessas novas linhas"
+                  exclusionGroup="2"
+                  name="Saída de Inserções de Atributo de Histórico"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Membro Inferido]"
+                  description="Informações para atualizar a linha de dimensão inicial sem preenchimento"
+                  exclusionGroup="1"
+                  name="Saída de Atualizações de Membro Inferido"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino OLE DB"
+              name="Insert Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">[dbo].[Dim_Organizacional]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica a página de código de coluna a ser usada quando não há informações de página de código disponíveis a partir da fonte de dados."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forca o uso do valor da propriedade DefaultCodePage durante a descrição dos dados de caractere."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se os valores fornecidos para colunas de identidade serão copiados no destino. Se false, os valores para colunas de identidade serão gerados automaticamente no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica se as colunas que contêm null terão null inserido no destino. Se false, as colunas que contêm null terão seus valores padrão inseridos no destino. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica as opções a serem usadas com o carregamento rápido. Aplicável apenas se o carregamento rápido estiver ativado."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica quando confirmações são emitidas durante a inserção de dados. Um valor de 0 especifica que uma confirmação será emitida ao final da inserção de dados. Aplicável somente se o carregamento rápido estiver ativado."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Conexão com o Datawarehouse]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB]"
+                  errorOrTruncationOperation="Inserir"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de Destino OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[Cod_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Filho]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[Desc_Filho]"
+                      cachedDataType="wstr"
+                      cachedLength="200"
+                      cachedName="Desc_Filho"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Desc_Filho]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Desc_Filho]" />
+                    <inputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].Columns[Cod_Pai]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Cod_Pai"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Pai]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados].Columns[Cod_Pai]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Filho]"
+                      dataType="wstr"
+                      length="50"
+                      name="Cod_Filho" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Desc_Filho]"
+                      dataType="wstr"
+                      length="200"
+                      name="Desc_Filho" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Cod_Pai]"
+                      dataType="wstr"
+                      length="50"
+                      name="Cod_Pai" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Esquerda]"
+                      dataType="i4"
+                      name="Esquerda" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Direita]"
+                      dataType="i4"
+                      name="Direita" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB].ExternalColumns[Nivel]"
+                      dataType="i4"
+                      name="Nivel" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Outputs[Saída de Erro de Destino OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Saída de Erro de Destino OLE DB"
+                  synchronousInputId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Outputs[Saída de Erro de Destino OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Origem do Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Origem do Excel"
+              name="Origem do Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="O tempo em segundos antes que um comando expire. Zero indica uma expiração infinita."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica a variável que contém o nome do objeto de banco de dados usado para abrir um conjunto de linhas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="O comando SQL a ser executado."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="A variável que contém o comando SQL a ser executado."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica o modo usado para acessar o banco de dados."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="O mapeamento de parâmetros no comando SQL para variáveis."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 5]"
+                  description="A conexão de tempo de execução OLE DB usada para acessar o banco de dados."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel]"
+                  name="Saída de Origem do Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[VENDEDOR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[VENDEDOR]"
+                      length="255"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[VENDEDOR]"
+                      name="VENDEDOR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[matricula3]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula3]"
+                      name="matricula3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[matricula]"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].Columns[matricula]"
+                      name="matricula"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[matricula]"
+                      dataType="r8"
+                      name="matricula" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[VENDEDOR]"
+                      dataType="wstr"
+                      length="255"
+                      name="VENDEDOR" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[matricula3]"
+                      dataType="r8"
+                      name="matricula3" />
+                    <externalMetadataColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel].ExternalColumns[DIRETOR]"
+                      dataType="wstr"
+                      length="255"
+                      name="DIRETOR" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem do Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[VENDEDOR]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[VENDEDOR]"
+                      name="VENDEDOR" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[matricula3]"
+                      dataType="r8"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[matricula3]"
+                      name="matricula3" />
+                    <outputColumn
+                      refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[matricula]"
+                      dataType="r8"
+                      lineageId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Erro de Origem do Excel].Columns[matricula]"
+                      name="matricula" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Classificar Saída]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Inputs[Entrada de Conversão de Dados]"
+              name="Classificar Saída"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Outputs[Classificar Saída]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Nova Saída]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination.Inputs[Entrada de Destino OLE DB]"
+              name="Nova Saída"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Nova Saída]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Atualizações de Atributo de Alteração]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1.Inputs[Entrada de Comando OLE DB]"
+              name="Saída de Atualizações de Atributo de Alteração"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Atributo de Alteração]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Atualizações de Membro Inferido]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB.Inputs[Entrada de Comando OLE DB]"
+              name="Saída de Atualizações de Membro Inferido"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Outputs[Saída de Atualizações de Membro Inferido]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Conversão de Dados]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta.Inputs[Entrada de Dimensão de Alteração Lenta]"
+              name="Saída de Conversão de Dados"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE.Outputs[Saída de Conversão de Dados]" />
+            <path
+              refId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Origem do Excel]"
+              endId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar.Inputs[Classificar Entrada]"
+              name="Saída de Origem do Excel"
+              startId="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel.Outputs[Saída de Origem do Excel]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -9969,6 +11950,22 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\Criação da Dimensão Organização Tab 1 Nível 3" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{6ADFD63F-0745-4FC0-AA10-BA5D70036726}"
+      DTS:From="Package\Criação da Dimensão Organização Tab 1 Nível 3"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Criação da Dimensão Organizacional Tab 2 Nível 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{DB023C3A-6F45-45FA-96A0-5F441D2FE9F9}"
+      DTS:From="Package\Criação da Dimensão Organizacional Tab 2 Nível 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Criação da Dimensão Organizacional Tab 2 Nível 2" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -9994,6 +11991,14 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
           Size="317,42"
           Id="Package\Criação da Dimensão Organização Tab 1 Nível 1"
           TopLeft="55,174" />
+        <NodeLayout
+          Size="317,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2"
+          TopLeft="74,314" />
+        <NodeLayout
+          Size="317,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3"
+          TopLeft="90,427" />
         <NodeLayout
           Size="311,42"
           Id="Package\Criação da Dimensão Produto - Nível Categoria"
@@ -10074,10 +12079,6 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="317,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2"
-          TopLeft="74,314" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="213.5,216">
@@ -10112,10 +12113,6 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="317,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3"
-          TopLeft="90,427" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="232.5,356">
@@ -10142,6 +12139,82 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
                     Point3="16,39.5" />
                   <mssgle:LineSegment
                     End="16,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="329,42"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1"
+          TopLeft="127.333333333333,525.666666666667" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="248.5,469">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43.3333333333334,56.6666666666666"
+              Start="0,0"
+              End="43.3333333333334,49.1666666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.3333333333333"
+                    Point2="0,28.3333333333333"
+                    Point3="4,28.3333333333333" />
+                  <mssgle:LineSegment
+                    End="39.3333333333334,28.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39.3333333333334,28.3333333333333"
+                    Point2="43.3333333333334,28.3333333333333"
+                    Point3="43.3333333333334,32.3333333333333" />
+                  <mssgle:LineSegment
+                    End="43.3333333333334,49.1666666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="329,42"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2"
+          TopLeft="192.5,615.833333333333" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="291.833333333333,567.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="65.1666666666666,48.1666666666666"
+              Start="0,0"
+              End="65.1666666666666,40.6666666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.0833333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.0833333333333"
+                    Point2="0,24.0833333333333"
+                    Point3="4,24.0833333333333" />
+                  <mssgle:LineSegment
+                    End="61.1666666666666,24.0833333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="61.1666666666666,24.0833333333333"
+                    Point2="65.1666666666666,24.0833333333333"
+                    Point3="65.1666666666666,28.0833333333333" />
+                  <mssgle:LineSegment
+                    End="65.1666666666666,40.6666666666666" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11162,6 +13235,540 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 2">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="227,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Planilha Funcionários Grupo 1"
+          TopLeft="202.5,5.49999999999989" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Classificar"
+          TopLeft="251,107.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Origem do Excel]"
+          TopLeft="316,47.4999999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Conversão para UNICODE"
+          TopLeft="210.5,209.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Classificar Saída]"
+          TopLeft="316,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Dimensão de Alteração Lenta"
+          TopLeft="204,311.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Conversão de Dados]"
+          TopLeft="316,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Insert Destination"
+          TopLeft="5.50000000000006,413.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Nova Saída]"
+          TopLeft="262,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-174,60"
+              Start="0,0"
+              End="-174,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="-4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-170,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-170,20.4705882352941"
+                    Point2="-174,20.4705882352941"
+                    Point3="-174,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="-174,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-111.993359375,25.4705882352941,49.98671875,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Comando OLE DB"
+          TopLeft="231,413.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="316,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Comando OLE DB 1"
+          TopLeft="461.5,413.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="370,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="181,60"
+              Start="0,0"
+              End="181,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="4,20.4705882352941" />
+                  <mssgle:LineSegment
+                    End="177,20.4705882352941" />
+                  <mssgle:CubicBezierSegment
+                    Point1="177,20.4705882352941"
+                    Point2="181,20.4705882352941"
+                    Point3="181,24.4705882352941" />
+                  <mssgle:LineSegment
+                    End="181,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 2\Planilha Funcionários Grupo 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 2\Dimensão de Alteração Lenta">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionID&gt;{2C5C0AD2-B5E1-4CB9-92E4-EF7783C6F39B}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[Dim_Organizacional]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Cod_Filho]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Filho&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Cod_Pai]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Pai&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Desc_Filho]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Desc_Filho&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 3">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="227,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Planilha Funcionários Grupo 1"
+          TopLeft="202.5,5.49999999999989" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Classificar"
+          TopLeft="251,107.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Origem do Excel]"
+          TopLeft="316,47.4999999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Conversão para UNICODE"
+          TopLeft="210.5,209.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Classificar Saída]"
+          TopLeft="316,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Dimensão de Alteração Lenta"
+          TopLeft="204,311.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Conversão de Dados]"
+          TopLeft="316,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Insert Destination"
+          TopLeft="7.50000000000006,424.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Nova Saída]"
+          TopLeft="262,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-172,71"
+              Start="0,0"
+              End="-172,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2235294117647" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2235294117647"
+                    Point2="0,24.2235294117647"
+                    Point3="-4,24.2235294117647" />
+                  <mssgle:LineSegment
+                    End="-168,24.2235294117647" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-168,24.2235294117647"
+                    Point2="-172,24.2235294117647"
+                    Point3="-172,28.2235294117647" />
+                  <mssgle:LineSegment
+                    End="-172,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-110.993359375,29.2235294117647,49.98671875,10.3349609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Comando OLE DB"
+          TopLeft="244,468.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Atualizações de Membro Inferido]"
+          TopLeft="316,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.0000000000001,115"
+              Start="0,0"
+              End="13.0000000000001,107.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,53.5"
+                    Point2="0,57.5"
+                    Point3="4,57.5" />
+                  <mssgle:LineSegment
+                    End="9.00000000000006,57.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.00000000000006,57.5"
+                    Point2="13.0000000000001,57.5"
+                    Point3="13.0000000000001,61.5" />
+                  <mssgle:LineSegment
+                    End="13.0000000000001,107.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-87.0976953125,62.5,187.195390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Comando OLE DB 1"
+          TopLeft="566.5,439.5" />
+        <EdgeLayout
+          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Atualizações de Atributo de Alteração]"
+          TopLeft="370,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="286,86"
+              Start="0,0"
+              End="286,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.3411764705882" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.3411764705882"
+                    Point2="0,29.3411764705882"
+                    Point3="4,29.3411764705882" />
+                  <mssgle:LineSegment
+                    End="282,29.3411764705882" />
+                  <mssgle:CubicBezierSegment
+                    Point1="282,29.3411764705882"
+                    Point2="286,29.3411764705882"
+                    Point3="286,33.3411764705882" />
+                  <mssgle:LineSegment
+                    End="286,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="39.6373046875,34.3411764705882,206.725390625,12.2490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 3\Planilha Funcionários Grupo 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 3\Dimensão de Alteração Lenta">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionID&gt;{2C5C0AD2-B5E1-4CB9-92E4-EF7783C6F39B}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[Dim_Organizacional]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Cod_Filho]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Filho&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Cod_Pai]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Cod_Pai&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Desc_Filho]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Desc_Filho&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Comando OLE DB 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Criação da Dimensão Produto - Nível Categoria">
     <LayoutInfo>
       <GraphLayout
@@ -12027,20 +14634,20 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 2">
+    design-time-name="Package\Criação da Dimensão Organizacional Tab 2 Nível 1">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="227,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Planilha Funcionários Grupo 1"
-          TopLeft="202.5,5.49999999999989" />
+          Size="160,42"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel"
+          TopLeft="236,5.49999999999989" />
         <NodeLayout
           Size="130,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Classificar"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Classificar"
           TopLeft="251,107.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Origem do Excel]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Origem do Excel]"
           TopLeft="316,47.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12063,10 +14670,10 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="211,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Conversão para UNICODE"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Conversão para UNICODE"
           TopLeft="210.5,209.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Classificar Saída]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Classificar Saída]"
           TopLeft="316,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12089,10 +14696,10 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="224,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Dimensão de Alteração Lenta"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta"
           TopLeft="204,311.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Conversão de Dados]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Conversão de Dados]"
           TopLeft="316,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12115,10 +14722,10 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="165,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Insert Destination"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Insert Destination"
           TopLeft="5.50000000000006,413.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Nova Saída]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Nova Saída]"
           TopLeft="262,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12155,10 +14762,10 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="170,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Comando OLE DB"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB"
           TopLeft="231,413.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Atualizações de Membro Inferido]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Atualizações de Membro Inferido]"
           TopLeft="316,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12183,10 +14790,10 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="179,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2\Comando OLE DB 1"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Comando OLE DB 1"
           TopLeft="461.5,413.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 2.Paths[Saída de Atualizações de Atributo de Alteração]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 1.Paths[Saída de Atualizações de Atributo de Alteração]"
           TopLeft="370,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12225,7 +14832,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 2\Planilha Funcionários Grupo 1">
+    design-time-name="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Origem do Excel">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12238,7 +14845,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 2\Dimensão de Alteração Lenta">
+    design-time-name="Package\Criação da Dimensão Organizacional Tab 2 Nível 1\Dimensão de Alteração Lenta">
     <Properties>
       <Property>
         <Name>SCDMetadata</Name>
@@ -12253,12 +14860,6 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
       &lt;ColumnName&gt;Cod_Filho&lt;/ColumnName&gt;
       &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
       &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Cod_Pai]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Cod_Pai&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;Conversão para UNICODE.Saídas[Saída de Conversão de Dados].Colunas[Desc_Filho]&lt;/IdentificationString&gt;
@@ -12288,20 +14889,20 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 3">
+    design-time-name="Package\Criação da Dimensão Organizacional Tab 2 Nível 2">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="227,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Planilha Funcionários Grupo 1"
-          TopLeft="202.5,5.49999999999989" />
+          Size="160,42"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel"
+          TopLeft="236,5.49999999999989" />
         <NodeLayout
           Size="130,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Classificar"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Classificar"
           TopLeft="251,107.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Origem do Excel]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Origem do Excel]"
           TopLeft="316,47.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12324,10 +14925,10 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="211,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Conversão para UNICODE"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Conversão para UNICODE"
           TopLeft="210.5,209.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Classificar Saída]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Classificar Saída]"
           TopLeft="316,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12350,10 +14951,10 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="224,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Dimensão de Alteração Lenta"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta"
           TopLeft="204,311.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Conversão de Dados]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Conversão de Dados]"
           TopLeft="316,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12376,121 +14977,109 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
         </EdgeLayout>
         <NodeLayout
           Size="165,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Insert Destination"
-          TopLeft="7.50000000000006,424.5" />
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Insert Destination"
+          TopLeft="5.50000000000006,413.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Nova Saída]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Nova Saída]"
           TopLeft="262,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-172,71"
+              EndConnector="-174,60"
               Start="0,0"
-              End="-172,63.5">
+              End="-174,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2235294117647" />
+                    End="0,16.4705882352941" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2235294117647"
-                    Point2="0,24.2235294117647"
-                    Point3="-4,24.2235294117647" />
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="-4,20.4705882352941" />
                   <mssgle:LineSegment
-                    End="-168,24.2235294117647" />
+                    End="-170,20.4705882352941" />
                   <mssgle:CubicBezierSegment
-                    Point1="-168,24.2235294117647"
-                    Point2="-172,24.2235294117647"
-                    Point3="-172,28.2235294117647" />
+                    Point1="-170,20.4705882352941"
+                    Point2="-174,20.4705882352941"
+                    Point3="-174,24.4705882352941" />
                   <mssgle:LineSegment
-                    End="-172,63.5" />
+                    End="-174,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-110.993359375,29.2235294117647,49.98671875,10.3349609375"
+              BoundingBox="-111.993359375,25.4705882352941,49.98671875,10.3349609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
           Size="170,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Comando OLE DB"
-          TopLeft="244,468.5" />
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB"
+          TopLeft="231,413.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Atualizações de Membro Inferido]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Atualizações de Membro Inferido]"
           TopLeft="316,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="13.0000000000001,115"
+              EndConnector="0,60"
               Start="0,0"
-              End="13.0000000000001,107.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,53.5"
-                    Point2="0,57.5"
-                    Point3="4,57.5" />
-                  <mssgle:LineSegment
-                    End="9.00000000000006,57.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="9.00000000000006,57.5"
-                    Point2="13.0000000000001,57.5"
-                    Point3="13.0000000000001,61.5" />
-                  <mssgle:LineSegment
-                    End="13.0000000000001,107.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-87.0976953125,62.5,187.195390625,12.2490234375"
+              BoundingBox="-93.5976953125,20.12548828125,187.195390625,12.2490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
           Size="179,42"
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3\Comando OLE DB 1"
-          TopLeft="566.5,439.5" />
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Comando OLE DB 1"
+          TopLeft="461.5,413.5" />
         <EdgeLayout
-          Id="Package\Criação da Dimensão Organização Tab 1 Nível 3.Paths[Saída de Atualizações de Atributo de Alteração]"
+          Id="Package\Criação da Dimensão Organizacional Tab 2 Nível 2.Paths[Saída de Atualizações de Atributo de Alteração]"
           TopLeft="370,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="286,86"
+              EndConnector="181,60"
               Start="0,0"
-              End="286,78.5">
+              End="181,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.3411764705882" />
+                    End="0,16.4705882352941" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.3411764705882"
-                    Point2="0,29.3411764705882"
-                    Point3="4,29.3411764705882" />
+                    Point1="0,16.4705882352941"
+                    Point2="0,20.4705882352941"
+                    Point3="4,20.4705882352941" />
                   <mssgle:LineSegment
-                    End="282,29.3411764705882" />
+                    End="177,20.4705882352941" />
                   <mssgle:CubicBezierSegment
-                    Point1="282,29.3411764705882"
-                    Point2="286,29.3411764705882"
-                    Point3="286,33.3411764705882" />
+                    Point1="177,20.4705882352941"
+                    Point2="181,20.4705882352941"
+                    Point3="181,24.4705882352941" />
                   <mssgle:LineSegment
-                    End="286,78.5" />
+                    End="181,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="39.6373046875,34.3411764705882,206.725390625,12.2490234375"
+              BoundingBox="-12.8626953125,25.4705882352941,206.725390625,12.2490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -12498,7 +15087,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 3\Planilha Funcionários Grupo 1">
+    design-time-name="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Origem do Excel">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12511,7 +15100,7 @@ SELECT'003' AS CODIGO, 'Fáb. do Nordeste' AS DESCRITOR</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Criação da Dimensão Organização Tab 1 Nível 3\Dimensão de Alteração Lenta">
+    design-time-name="Package\Criação da Dimensão Organizacional Tab 2 Nível 2\Dimensão de Alteração Lenta">
     <Properties>
       <Property>
         <Name>SCDMetadata</Name>
