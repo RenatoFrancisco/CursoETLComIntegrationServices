@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDimensoes"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{FC4E938E-7E83-41C4-AE3D-4BB4B0FE13E4}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{212DDA15-E996-4CC0-87D6-BFA8EA3B9ED4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUY0s0zQpC0a1xM/O6MvCkwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAArzQX1WSOjIX086H8De60x2UTGv16ylYhd/FIj7UR0ZAAAAAAOgAAAAAIAACAAAACX5HMgkEOpI6Oa3cDAq1vDZZ4rQiTkyO3wN5QoMWufXyAAAABLiOZ+0ui3e4zfTMWEI+YICM8qtfgIi9R5SlnePKuPjkAAAABlWTIC+D9fxT+IB1viBHeZTzeJ9kgvadrEKb1p97UDjT+/n47ZYqPSHtNKZcQ9I9MgAtCGqAJAvznyGFn/7ogr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUY0s0zQpC0a1xM/O6MvCkwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABOWURWwfGgA2Yu5bNHE1oOIP2ZmSZX5RPrDFQfV7XrUQAAAAAOgAAAAAIAACAAAAAVxw9jqqzKt6w8Sn+YUPhvszVrbvZj74MZ9878XpUT4SAAAAD43SSrw3m3alu7f7YieOo+ZfmnWuKjW+bU059lhmfIhEAAAABcWQ2lYt6X/cnX22Zx9/a3qRtUX2McHH2qWWzCc8RRbykAp4HxNh/JT2RPtLLYi+d+fvHgEoQArO48TVo2D/z8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -203,6 +203,44 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{EE6D1344-DD4B-4238-B10B-004A3520BA5A}"
+      DTS:ObjectName="Ano_Final">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">2013</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{27BC2D9F-6C6E-4F43-BCE1-26097484231D}"
+      DTS:ObjectName="Ano_Inicial">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">2013</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{1BC120A1-957C-4B68-AA5A-945D4D541961}"
+      DTS:ObjectName="Mes_Final">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">12</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{E5D22439-CB04-4507-921F-5B83DDA95696}"
+      DTS:ObjectName="Mes_Inicial">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">7</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -13266,10 +13304,10 @@ DECLARE @DIMDATE TABLE
 		[Tipo_Dia] NVARCHAR(50) -- Dia Útil ou Fim de Semana
 	)
 
-DECLARE @AnoInicial VARCHAR(4) = '2013'
-DECLARE @MesInicial VARCHAR(2) = '1'
-DECLARE @AnoFinal VARCHAR(4) = '2013'
-DECLARE @MesFinal VARCHAR(2) = '6'
+DECLARE @AnoInicial VARCHAR(4) = ?
+DECLARE @MesInicial VARCHAR(2) = ?
+DECLARE @AnoFinal VARCHAR(4) = ?
+DECLARE @MesFinal VARCHAR(2) = ?
 
 DECLARE @StartDate DATETIME
 Select @StartDate = CAST(@AnoInicial + '/' + @MesInicial + '/01' AS DATETIME)
@@ -13489,7 +13527,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
                 <property
                   dataType="System.String"
                   description="Os mapeamentos entre os parâmetros no comando SQL e as variáveis."
-                  name="ParameterMapping"></property>
+                  name="ParameterMapping">"Parameter0:Input",{27BC2D9F-9391-4F43-BCE1-26097484231D};"Parameter1:Input",{E5D22439-34FB-4507-921F-5B83DDA95696};"Parameter2:Input",{EE6D1344-22B4-4238-B10B-004A3520BA5A};"Parameter3:Input",{1BC120A1-6A83-4B68-AA5A-945D4D541961};</property>
               </properties>
               <connections>
                 <connection
