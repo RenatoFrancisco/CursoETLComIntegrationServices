@@ -11,8 +11,8 @@
   DTS:LocaleID="1046"
   DTS:ObjectName="CargaDimensoes"
   DTS:PackageType="5"
-  DTS:VersionBuild="61"
-  DTS:VersionGUID="{32CD1501-2F13-4C72-A3F7-CEEFF0E6BB4A}">
+  DTS:VersionBuild="63"
+  DTS:VersionGUID="{511AF488-F25D-426F-BEB9-C15876F154B2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUY0s0zQpC0a1xM/O6MvCkwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC7oLaVqnVUno4rWdQ1uMpDVjXxKhpq59SLkgG7FQlG2AAAAAAOgAAAAAIAACAAAACa9WXmnAPni8+mMnSK31AxrvACKx0HeHeQAvazcwMxGSAAAABWxWLiZZMf7U0WHCf/HCjLp7ecr+jHeHikPikoQuKoakAAAAByfOluKOYQvvdaTh+8VCx5qHuNabRjVftpcLcxP9QVhBCnVFtxQ27oEc2kv3gzeJ705d4MOWYgMXPGDg+JBaJ8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUY0s0zQpC0a1xM/O6MvCkwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA25ow+20OrtZSyHCYYLEO9pMxZLLNdRli3XOzhMpQhwwAAAAAOgAAAAAIAACAAAACHkan9Yi0PStUSS43Meor96qNge99ABFH2Mgurba1A6CAAAACsO73JbmUIOl/9Dg8IV/NheQqnBSuB0la8JYGukAQmMEAAAAAoeqJJBXmj3DTiGxD8ffeEd2URgI0EcS3PgT021uAUILRUZc/5rv6YD305AmbN7z/YoKPRv2KBA8BZs5d72ShC</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -18884,9 +18884,7 @@ SELECT * FROM @DIMDATE order by Cod_Dia</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
